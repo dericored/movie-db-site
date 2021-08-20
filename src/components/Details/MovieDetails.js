@@ -13,7 +13,7 @@ const MovieDetails = (props) => {
     setIsLoading(true);
     setMovie([]);
     fetch(
-      `http://www.omdbapi.com/?i=${props.match.params.id}&plot=full&apikey=40d1fefd`
+      `https://www.omdbapi.com/?i=${props.match.params.id}&plot=full&apikey=40d1fefd`
     )
       .then((res) => res.json())
       .then((data) => {

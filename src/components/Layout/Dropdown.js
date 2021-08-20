@@ -20,7 +20,7 @@ const Dropdown = ({ options, indicator, width, setDropdownState }) => {
             <span className="block truncate filter drop-shadow-white">{`${indicator} ${selected.name}`}</span>
             <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ const Dropdown = ({ options, indicator, width, setDropdownState }) => {
                                 absolute inset-y-0 left-0 flex items-center pl-3`}
                         >
                           <svg
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="https://www.w3.org/2000/svg"
                             className="h-5 w-5"
                             fill="none"
                             viewBox="0 0 24 24"

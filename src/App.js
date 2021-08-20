@@ -17,10 +17,10 @@ function App() {
           <div className="md:flex w-full relative bg-gradient-to-br from-indigo-1000 to-indigo-1000x">
             <Sidebar />
             <Switch>
-              <Route exact path="/" component={SearchMovies} />
               <Route exact path="/details/:id" component={MovieDetails} />
               <Route exact path="/trending" component={Trending} />
               <Route exact path="/review" component={CriticsReview} />
+              <Route path="/" component={SearchMovies} />
             </Switch>
           </div>
           <Footer />

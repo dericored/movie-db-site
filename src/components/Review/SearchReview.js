@@ -77,8 +77,8 @@ const SearchReview = ({ setSearchResults, setIsLoading }) => {
           >
             <svg
               className="text-gray-600 h-4 w-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlns="https://www.w3.org/2000/svg"
+              xmlnsXlink="https://www.w3.org/1999/xlink"
               version="1.1"
               id="Capa_1"
               x="0px"

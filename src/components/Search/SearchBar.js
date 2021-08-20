@@ -19,7 +19,7 @@ const SearchBar = ({ searchTerm, setSearchTerm, setIsLoading }) => {
     setIsLoading(true);
 
     // fetch from omdbapi by search term
-    fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=40d1fefd`)
+    fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=40d1fefd`)
       .then((res) => res.json())
       .then((data) => {
         // collect all imdbIDs from the response
@@ -28,7 +28,7 @@ const SearchBar = ({ searchTerm, setSearchTerm, setIsLoading }) => {
 
         const allPromises = ids.map(async (id) => {
           const res = await fetch(
-            `http://www.omdbapi.com/?i=${id}&apikey=40d1fefd`
+            `https://www.omdbapi.com/?i=${id}&apikey=40d1fefd`
           );
           return await res.json();
         });
@@ -57,8 +57,8 @@ const SearchBar = ({ searchTerm, setSearchTerm, setIsLoading }) => {
           <button type="submit" className="absolute top-3 right-0 mr-4">
             <svg
               className="text-gray-600 h-4 w-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlns="https://www.w3.org/2000/svg"
+              xmlnsXlink="https://www.w3.org/1999/xlink"
               version="1.1"
               id="Capa_1"
               x="0px"

@@ -51,7 +51,7 @@ const Trending = () => {
             // fetch ratings by imdbID from omdbapi.com
             const allPromises = x.map(async (imdbID) => {
               const res = await fetch(
-                `http://www.omdbapi.com/?i=${imdbID}&apikey=40d1fefd`
+                `https://www.omdbapi.com/?i=${imdbID}&apikey=40d1fefd`
               );
               return await res.json();
             });
