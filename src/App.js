@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Layout/Navbar";
 import { Provider } from "./context";
 import Sidebar from "./components/Layout/Sidebar";
@@ -11,7 +11,7 @@ import Footer from "./components/Layout/Footer";
 function App() {
   return (
     <Provider>
-      <Router>
+      <Router basename="movie-db-site">
         <div className="App">
           <Navbar />
           <div className="md:flex w-full relative bg-gradient-to-br from-indigo-1000 to-indigo-1000x">
