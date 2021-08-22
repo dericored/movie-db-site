@@ -17,9 +17,9 @@ const Trending = () => {
 
   // set fetch url depending on the dropdown state
   const getUrl = () => {
-    if (dropdownState === options[2].value)
+    if (dropdownState.value === options[2].value)
       return "https://api.themoviedb.org/3/movie/top_rated?api_key=fab42f847c9afb72cb37143df793dd94&language=en-US&page=1&region=US";
-    else if (dropdownState === options[0].value)
+    else if (dropdownState.value === options[0].value)
       return "https://api.themoviedb.org/3/trending/movie/day?api_key=fab42f847c9afb72cb37143df793dd94";
     else
       return "https://api.themoviedb.org/3/trending/movie/week?api_key=fab42f847c9afb72cb37143df793dd94";
@@ -28,6 +28,7 @@ const Trending = () => {
   useEffect(() => {
     setIsLoading(true);
     setSearchResultValue([]);
+    console.log(getUrl());
 
     // fetch from themoviedb.com
     fetch(getUrl())
