@@ -36,7 +36,7 @@ const Sidebar = () => {
             !openSidebarValue && "hidden"
           }`}
         >
-          Critics' Reviews
+          Critic Reviews
         </div>
       </Link>
     </div>

@@ -17,7 +17,7 @@ const CriticsReview = () => {
       }`}
     >
       <label className="text-white text-opacity-25 text-2xl text-center font-bold">
-        Find Critics' Reviews
+        Find Critic Reviews
       </label>
       {/* Search Bar */}
       <SearchReview
